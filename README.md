@@ -63,3 +63,11 @@ mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=com.bcom/icms
 * [Webpack concepts](https://webpack.js.org/concepts/)  
 * [npm docs](https://docs.npmjs.com/)  
 * [Tailwind CSS](https://tailwindcss.com/)  
+
+## How to create local and update existing/remote branch in github repository
+git init
+git add .
+git commit -m "Initiate the repository"
+git branch -M main
+git remote add origin https://github.com/victorsleimen/icms.git
+git push -u origin main [--force]
