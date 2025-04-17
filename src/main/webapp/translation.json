@@ -1,0 +1,893 @@
+{
+  "app": {
+    "title": "Icms"
+  },
+  "navigation": {
+    "toggle": "Toggle navigation",
+    "home": "Home",
+    "entities": "Entities",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "home": {
+    "index": {
+      "headline": "Welcome to your new app!",
+      "text": "Your app was created with <a href=\"https://bootify.io\" target=\"_blank\" className=\"underline\">Bootify.io</a> and can now be customized. If you are happy with the result, <strong>please recommend us to other developers</strong> - so Bootify.io can grow further.",
+      "swagger": {
+        "text": "Swagger is",
+        "link": "available here"
+      },
+      "exploreEntities": "Explore your entities"
+    }
+  },
+  "error": {
+    "page": {
+      "headline": "Error",
+      "message": "The page you are looking for is not available right now."
+    }
+  },
+  "user": {
+    "list": {
+      "headline": "Users",
+      "createNew": "Create new User",
+      "empty": "No Users could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "username,ASC": "Sort by Username (Ascending)",
+        "password,ASC": "Sort by Password (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add User",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "username": {
+      "label": "Username"
+    },
+    "password": {
+      "label": "Password"
+    },
+    "firstName": {
+      "label": "First Name"
+    },
+    "lastName": {
+      "label": "Last Name"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "doe": {
+      "label": "Doe"
+    },
+    "timeZoneId": {
+      "label": "Time Zone Id"
+    },
+    "firstLogin": {
+      "label": "First Login"
+    },
+    "isUtc": {
+      "label": "Is Utc"
+    },
+    "isActive": {
+      "label": "Is Active"
+    },
+    "loggedUser": {
+      "label": "Logged User"
+    },
+    "roles": {
+      "label": "Roles"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "edit": {
+      "headline": "Edit User",
+      "back": "Back to list"
+    },
+    "ticket": {
+      "assignee": {
+        "referenced": "This entity is still referenced by Ticket {{id}} via field Assignee."
+      }
+    },
+    "comment": {
+      "user": {
+        "referenced": "This entity is still referenced by Comment {{id}} via field User."
+      }
+    },
+    "notification": {
+      "user": {
+        "referenced": "This entity is still referenced by Notification {{id}} via field User."
+      }
+    },
+    "create": {
+      "success": "User was created successfully."
+    },
+    "update": {
+      "success": "User was updated successfully."
+    },
+    "delete": {
+      "success": "User was removed successfully."
+    }
+  },
+  "role": {
+    "list": {
+      "headline": "Roles",
+      "createNew": "Create new Role",
+      "empty": "No Roles could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "name,ASC": "Sort by Name (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Role",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "name": {
+      "label": "Name"
+    },
+    "edit": {
+      "headline": "Edit Role",
+      "back": "Back to list"
+    },
+    "user": {
+      "roles": {
+        "referenced": "This entity is still referenced by User {{id}} via field Roles."
+      }
+    },
+    "create": {
+      "success": "Role was created successfully."
+    },
+    "update": {
+      "success": "Role was updated successfully."
+    },
+    "delete": {
+      "success": "Role was removed successfully."
+    }
+  },
+  "client": {
+    "list": {
+      "headline": "Clients",
+      "createNew": "Create new Client",
+      "empty": "No Clients could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "clientName,ASC": "Sort by Client Name (Ascending)",
+        "address,ASC": "Sort by Address (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Client",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "clientName": {
+      "label": "Client Name"
+    },
+    "address": {
+      "label": "Address"
+    },
+    "tel": {
+      "label": "Tel"
+    },
+    "fax": {
+      "label": "Fax"
+    },
+    "mobile": {
+      "label": "Mobile"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "registrationNum": {
+      "label": "Registration Num"
+    },
+    "webURL": {
+      "label": "WebURL"
+    },
+    "isBcom": {
+      "label": "Is Bcom"
+    },
+    "edit": {
+      "headline": "Edit Client",
+      "back": "Back to list"
+    },
+    "user": {
+      "client": {
+        "referenced": "This entity is still referenced by User {{id}} via field Client."
+      }
+    },
+    "ticket": {
+      "client": {
+        "referenced": "This entity is still referenced by Ticket {{id}} via field Client."
+      }
+    },
+    "sla": {
+      "client": {
+        "referenced": "This entity is still referenced by Sla {{id}} via field Client."
+      }
+    },
+    "attachment": {
+      "client": {
+        "referenced": "This entity is still referenced by Attachment {{id}} via field Client."
+      }
+    },
+    "comment": {
+      "client": {
+        "referenced": "This entity is still referenced by Comment {{id}} via field Client."
+      }
+    },
+    "notification": {
+      "client": {
+        "referenced": "This entity is still referenced by Notification {{id}} via field Client."
+      }
+    },
+    "knowledgeArticles": {
+      "client": {
+        "referenced": "This entity is still referenced by Knowledge Articles {{id}} via field Client."
+      }
+    },
+    "historyLogs": {
+      "client": {
+        "referenced": "This entity is still referenced by History Logs {{id}} via field Client."
+      }
+    },
+    "create": {
+      "success": "Client was created successfully."
+    },
+    "update": {
+      "success": "Client was updated successfully."
+    },
+    "delete": {
+      "success": "Client was removed successfully."
+    }
+  },
+  "type": {
+    "list": {
+      "headline": "Types",
+      "createNew": "Create new Type",
+      "empty": "No Types could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "typeCode,ASC": "Sort by Type Code (Ascending)",
+        "typeName,ASC": "Sort by Type Name (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Type",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "typeCode": {
+      "label": "Type Code"
+    },
+    "typeName": {
+      "label": "Type Name"
+    },
+    "sequenceNum": {
+      "label": "Sequence Num"
+    },
+    "edit": {
+      "headline": "Edit Type",
+      "back": "Back to list"
+    },
+    "moduleSatusOrder": {
+      "type": {
+        "referenced": "This entity is still referenced by Module Satus Order {{id}} via field Type."
+      }
+    },
+    "priorityMatrix": {
+      "type": {
+        "referenced": "This entity is still referenced by Priority Matrix {{id}} via field Type."
+      }
+    },
+    "attachment": {
+      "type": {
+        "referenced": "This entity is still referenced by Attachment {{id}} via field Type."
+      }
+    },
+    "create": {
+      "success": "Type was created successfully."
+    },
+    "update": {
+      "success": "Type was updated successfully."
+    },
+    "delete": {
+      "success": "Type was removed successfully."
+    }
+  },
+  "moduleSatusOrder": {
+    "list": {
+      "headline": "Module Satus Orders",
+      "createNew": "Create new Module Satus Order",
+      "empty": "No Module Satus Orders could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "moduleName,ASC": "Sort by Module Name (Ascending)",
+        "level,ASC": "Sort by Level (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Module Satus Order",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "moduleName": {
+      "label": "Module Name"
+    },
+    "level": {
+      "label": "Level"
+    },
+    "order": {
+      "label": "Order"
+    },
+    "type": {
+      "label": "Type"
+    },
+    "status": {
+      "label": "Status"
+    },
+    "edit": {
+      "headline": "Edit Module Satus Order",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "Module Satus Order was created successfully."
+    },
+    "update": {
+      "success": "Module Satus Order was updated successfully."
+    },
+    "delete": {
+      "success": "Module Satus Order was removed successfully."
+    }
+  },
+  "allStatus": {
+    "list": {
+      "headline": "All Statuses",
+      "createNew": "Create new All Status",
+      "empty": "No All Statuses could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "name,ASC": "Sort by Name (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add All Status",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "name": {
+      "label": "Name"
+    },
+    "edit": {
+      "headline": "Edit All Status",
+      "back": "Back to list"
+    },
+    "moduleSatusOrder": {
+      "status": {
+        "referenced": "This entity is still referenced by Module Satus Order {{id}} via field Status."
+      }
+    },
+    "create": {
+      "success": "All Status was created successfully."
+    },
+    "update": {
+      "success": "All Status was updated successfully."
+    },
+    "delete": {
+      "success": "All Status was removed successfully."
+    }
+  },
+  "ticket": {
+    "list": {
+      "headline": "Tickets",
+      "createNew": "Create new Ticket",
+      "empty": "No Tickets could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "code,ASC": "Sort by Code (Ascending)",
+        "name,ASC": "Sort by Name (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Ticket",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "code": {
+      "label": "Code"
+    },
+    "name": {
+      "label": "Name"
+    },
+    "description": {
+      "label": "Description"
+    },
+    "attachment": {
+      "label": "Attachment"
+    },
+    "openDate": {
+      "label": "Open Date"
+    },
+    "ticketType": {
+      "label": "Ticket Type"
+    },
+    "owner": {
+      "label": "Owner"
+    },
+    "status": {
+      "label": "Status"
+    },
+    "urgency": {
+      "label": "Urgency"
+    },
+    "impact": {
+      "label": "Impact"
+    },
+    "priority": {
+      "label": "Priority"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "sla": {
+      "label": "Sla"
+    },
+    "assignee": {
+      "label": "Assignee"
+    },
+    "edit": {
+      "headline": "Edit Ticket",
+      "back": "Back to list"
+    },
+    "notification": {
+      "ticket": {
+        "referenced": "This entity is still referenced by Notification {{id}} via field Ticket."
+      }
+    },
+    "create": {
+      "success": "Ticket was created successfully."
+    },
+    "update": {
+      "success": "Ticket was updated successfully."
+    },
+    "delete": {
+      "success": "Ticket was removed successfully."
+    }
+  },
+  "sla": {
+    "list": {
+      "headline": "Slas",
+      "createNew": "Create new Sla",
+      "empty": "No Slas could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "name,ASC": "Sort by Name (Ascending)",
+        "description,ASC": "Sort by Description (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Sla",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "name": {
+      "label": "Name"
+    },
+    "description": {
+      "label": "Description"
+    },
+    "responseTime": {
+      "label": "Response Time"
+    },
+    "resolutionTime": {
+      "label": "Resolution Time"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "edit": {
+      "headline": "Edit Sla",
+      "back": "Back to list"
+    },
+    "ticket": {
+      "sla": {
+        "referenced": "This entity is still referenced by Ticket {{id}} via field Sla."
+      }
+    },
+    "create": {
+      "success": "Sla was created successfully."
+    },
+    "update": {
+      "success": "Sla was updated successfully."
+    },
+    "delete": {
+      "success": "Sla was removed successfully."
+    }
+  },
+  "priorityMatrix": {
+    "list": {
+      "headline": "Priority Matrixes",
+      "createNew": "Create new Priority Matrix",
+      "empty": "No Priority Matrixes could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "urgency,ASC": "Sort by Urgency (Ascending)",
+        "impact,ASC": "Sort by Impact (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Priority Matrix",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "urgency": {
+      "label": "Urgency"
+    },
+    "impact": {
+      "label": "Impact"
+    },
+    "priority": {
+      "label": "Priority"
+    },
+    "type": {
+      "label": "Type"
+    },
+    "edit": {
+      "headline": "Edit Priority Matrix",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "Priority Matrix was created successfully."
+    },
+    "update": {
+      "success": "Priority Matrix was updated successfully."
+    },
+    "delete": {
+      "success": "Priority Matrix was removed successfully."
+    }
+  },
+  "attachment": {
+    "list": {
+      "headline": "Attachments",
+      "createNew": "Create new Attachment",
+      "empty": "No Attachments could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "fileName,ASC": "Sort by File Name (Ascending)",
+        "filePath,ASC": "Sort by File Path (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Attachment",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "fileName": {
+      "label": "File Name"
+    },
+    "filePath": {
+      "label": "File Path"
+    },
+    "mimeType": {
+      "label": "Mime Type"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "type": {
+      "label": "Type"
+    },
+    "edit": {
+      "headline": "Edit Attachment",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "Attachment was created successfully."
+    },
+    "update": {
+      "success": "Attachment was updated successfully."
+    },
+    "delete": {
+      "success": "Attachment was removed successfully."
+    }
+  },
+  "comment": {
+    "list": {
+      "headline": "Comments",
+      "createNew": "Create new Comment",
+      "empty": "No Comments could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "description,ASC": "Sort by Description (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Comment",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "description": {
+      "label": "Description"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "user": {
+      "label": "User"
+    },
+    "edit": {
+      "headline": "Edit Comment",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "Comment was created successfully."
+    },
+    "update": {
+      "success": "Comment was updated successfully."
+    },
+    "delete": {
+      "success": "Comment was removed successfully."
+    }
+  },
+  "notification": {
+    "list": {
+      "headline": "Notifications",
+      "createNew": "Create new Notification",
+      "empty": "No Notifications could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "notifType,ASC": "Sort by Notif Type (Ascending)",
+        "message,ASC": "Sort by Message (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Notification",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "notifType": {
+      "label": "Notif Type"
+    },
+    "message": {
+      "label": "Message"
+    },
+    "isRead": {
+      "label": "Is Read"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "user": {
+      "label": "User"
+    },
+    "ticket": {
+      "label": "Ticket"
+    },
+    "edit": {
+      "headline": "Edit Notification",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "Notification was created successfully."
+    },
+    "update": {
+      "success": "Notification was updated successfully."
+    },
+    "delete": {
+      "success": "Notification was removed successfully."
+    }
+  },
+  "knowledgeArticles": {
+    "list": {
+      "headline": "Knowledge Articleses",
+      "createNew": "Create new Knowledge Articles",
+      "empty": "No Knowledge Articleses could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "title,ASC": "Sort by Title (Ascending)",
+        "content,ASC": "Sort by Content (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add Knowledge Articles",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "title": {
+      "label": "Title"
+    },
+    "content": {
+      "label": "Content"
+    },
+    "status": {
+      "label": "Status"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "edit": {
+      "headline": "Edit Knowledge Articles",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "Knowledge Articles was created successfully."
+    },
+    "update": {
+      "success": "Knowledge Articles was updated successfully."
+    },
+    "delete": {
+      "success": "Knowledge Articles was removed successfully."
+    }
+  },
+  "historyLogs": {
+    "list": {
+      "headline": "History Logses",
+      "createNew": "Create new History Logs",
+      "empty": "No History Logses could be found.",
+      "sort": {
+        "id,ASC": "Sort by Id (Ascending)",
+        "entityType,ASC": "Sort by Entity Type (Ascending)",
+        "changedDate,ASC": "Sort by Changed Date (Ascending)"
+      },
+      "filter": "Filter by Id",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "add": {
+      "headline": "Add History Logs",
+      "back": "Back to list"
+    },
+    "id": {
+      "label": "Id"
+    },
+    "entityType": {
+      "label": "Entity Type"
+    },
+    "changedDate": {
+      "label": "Changed Date"
+    },
+    "action": {
+      "label": "Action"
+    },
+    "client": {
+      "label": "Client"
+    },
+    "edit": {
+      "headline": "Edit History Logs",
+      "back": "Back to list"
+    },
+    "create": {
+      "success": "History Logs was created successfully."
+    },
+    "update": {
+      "success": "History Logs was updated successfully."
+    },
+    "delete": {
+      "success": "History Logs was removed successfully."
+    }
+  },
+  "authentication": {
+    "logout": {
+      "success": "Your logout was successful."
+    }
+  },
+  "exists": {
+    "user": {
+      "username": "This Username is already taken."
+    },
+    "role": {
+      "name": "This Name is already taken."
+    }
+  },
+  "NotNull": {
+    "ticket": {
+      "status": "Please select a Status.",
+      "priority": "Please select a Priority."
+    },
+    "priorityMatrix": {
+      "priority": "Please select a Priority."
+    },
+    "notification": {
+      "notifType": "Please select a Notificationtype."
+    },
+    "knowledgeArticles": {
+      "status": "Please select a Knowledgestatus."
+    },
+    "historyLogs": {
+      "entityType": "Please select a Entitytype.",
+      "action": "Please select a Actiontype."
+    }
+  },
+  "select": {
+    "empty": {
+      "label": "Please select"
+    }
+  },
+  "delete": {
+    "confirm": "Do you really want to delete this element? This cannot be undone."
+  },
+  "operation": {
+    "success": "Your operation was successful."
+  },
+  "required": "Please provide a value.",
+  "maxlength": "Your value must have a length of less then ${max} characters.",
+  "valid": {
+    "number": "Please provide a valid number."
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "elements": "Item {{range}} of {{total}}"
+  },
+  "searchFilter": {
+    "apply": "Apply"
+  }
+}
